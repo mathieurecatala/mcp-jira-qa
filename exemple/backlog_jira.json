@@ -1,0 +1,53 @@
+{
+  "issues": [
+    {
+      "key": "BOUT-201",
+      "fields": {
+        "summary": "Suivi de commande en temps réel",
+        "issuetype": {"name": "Story"},
+        "status": {"name": "To Do"},
+        "priority": {"name": "Medium"},
+        "labels": ["commande", "livraison"],
+        "customfield_10016": 3,
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {"type": "paragraph", "content": [{"type": "text", "text": "En tant que client, je veux suivre l'acheminement de ma commande depuis mon compte afin de savoir quand elle sera livrée."}]},
+            {"type": "heading", "attrs": {"level": 3}, "content": [{"type": "text", "text": "Critères d'acceptation"}]},
+            {"type": "bulletList", "content": [
+              {"type": "listItem", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "La page de la commande affiche le statut parmi : préparée, expédiée, en livraison, livrée."}]}]},
+              {"type": "listItem", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Le numéro de suivi du transporteur est cliquable et ouvre le site du transporteur."}]}]},
+              {"type": "listItem", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Un e-mail part au client à chaque changement de statut, au plus 15 minutes après le changement."}]}]}
+            ]}
+          ]
+        }
+      }
+    },
+    {
+      "key": "BOUT-202",
+      "fields": {
+        "summary": "Le code promo reste appliqué après vidage du panier",
+        "issuetype": {"name": "Bug"},
+        "status": {"name": "To Do"},
+        "priority": {"name": "Highest"},
+        "labels": ["panier", "promo"],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {"type": "heading", "attrs": {"level": 3}, "content": [{"type": "text", "text": "Étapes pour reproduire"}]},
+            {"type": "orderedList", "content": [
+              {"type": "listItem", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Appliquer le code promo BIENVENUE10 sur un panier de 2 articles."}]}]},
+              {"type": "listItem", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Supprimer les 2 articles du panier."}]}]},
+              {"type": "listItem", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Ajouter un nouvel article."}]}]}
+            ]},
+            {"type": "paragraph", "content": [{"type": "text", "text": "Résultat obtenu : la réduction de 10 % s'applique au nouvel article alors que le code n'a pas été ressaisi."}]},
+            {"type": "heading", "attrs": {"level": 3}, "content": [{"type": "text", "text": "Résultat attendu"}]},
+            {"type": "paragraph", "content": [{"type": "text", "text": "Le code promo est retiré quand le panier est vidé ; le client doit le saisir à nouveau."}]}
+          ]
+        }
+      }
+    }
+  ]
+}

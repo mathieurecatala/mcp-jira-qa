@@ -1,0 +1,51 @@
+Summary,Issue key,Issue id,Issue Type,Status,Priority,Reporter,Created,Labels,Labels,Sprint,Custom field (Story point estimate),Description
+Ajout au panier depuis la fiche produit,BOUT-101,10101,Story,To Do,High,Claire Martin,2026-09-15 09:12,panier,parcours-achat,Sprint 18,3,"En tant que client, je veux ajouter un produit au panier depuis sa fiche afin de poursuivre mes achats sans quitter la page.
+
+h3. Critères d'acceptation
+* Le bouton « Ajouter au panier » est désactivé tant qu'aucune taille n'est choisie pour un produit à tailles.
+* Après l'ajout, le compteur du panier dans l'en-tête augmente de la quantité ajoutée.
+* Si le stock disponible est inférieur à la quantité demandée, un message indique le stock restant et rien n'est ajouté.
+* Un produit déjà présent dans le panier voit sa quantité augmenter au lieu de créer une deuxième ligne."
+Appliquer un code promo au paiement,BOUT-102,10102,Story,To Do,High,Claire Martin,2026-09-15 09:40,paiement,promo,Sprint 18,5,"En tant que client, je veux saisir un code promo à l'étape paiement afin de bénéficier d'une réduction.
+
+h3. Critères d'acceptation
+* Un code valide applique la réduction et affiche le nouveau total avant validation.
+* Un code expiré ou inconnu affiche un message d'erreur clair.
+* Un seul code promo peut être appliqué par commande.
+* Le code ne s'applique pas aux produits déjà soldés."
+Recherche produits plus rapide,BOUT-103,10103,Story,Backlog,Medium,Hugo Bernard,2026-09-16 14:03,recherche,,,,"La recherche doit être plus rapide et plus intuitive, avec de meilleurs résultats, etc."
+Le total du panier ne se met pas à jour après suppression d'un article,BOUT-104,10104,Bug,To Do,Highest,Support client,2026-09-17 10:22,panier,,Sprint 18,,"h3. Étapes pour reproduire
+# Ajouter deux produits différents au panier.
+# Ouvrir le panier.
+# Supprimer une ligne avec l'icône corbeille.
+
+h3. Résultat obtenu
+La ligne disparaît mais le total reste celui des deux produits.
+
+h3. Résultat attendu
+Le total est recalculé immédiatement, frais de livraison compris.
+
+Environnement : Chrome 128, Windows 11, production."
+Paiement bloqué sur mobile,BOUT-105,10105,Bug,To Do,Highest,Support client,2026-09-18 08:47,paiement,mobile,Sprint 18,,Plusieurs clients disent que le paiement ne marche pas sur mobile. À voir.
+Retour d'un produit en ligne sous 30 jours,BOUT-106,10106,Story,To Do,Medium,Claire Martin,2026-09-18 11:30,retours,sav,Sprint 19,8,"En tant que client connecté, je veux déclarer le retour d'un produit depuis mon compte afin d'être remboursé sans contacter le service client.
+
+h3. Critères d'acceptation
+* Le bouton « Retourner un article » n'apparaît que pour les commandes livrées depuis 30 jours ou moins.
+* Le client choisit le ou les articles concernés et un motif dans une liste fermée.
+* Une étiquette de retour prépayée est générée en PDF et envoyée par e-mail.
+* Les produits personnalisés ne peuvent pas être retournés et le motif du refus est affiché.
+* Le remboursement est déclenché à la réception de l'article, sur le moyen de paiement d'origine."
+Alerte de retour en stock,BOUT-107,10107,Story,Backlog,Low,Hugo Bernard,2026-09-19 16:05,stock,,,,"En tant que client, je veux être prévenu par e-mail quand un produit épuisé revient en stock afin de ne pas rater sa remise en vente.
+
+h3. Critères d'acceptation
+* Sur un produit épuisé, le bouton « Me prévenir » remplace « Ajouter au panier ».
+* L'e-mail part dans l'heure qui suit la remise en stock.
+* Le client ne reçoit qu'une alerte par produit."
+Migrer les images produits vers le CDN,BOUT-108,10108,Task,In Progress,Medium,Lucas Petit,2026-09-19 17:20,technique,,Sprint 18,2,Migrer les images vers le CDN.
+Filtrer le catalogue par taille et par couleur,BOUT-109,10109,Story,To Do,Medium,Claire Martin,2026-09-20 09:55,catalogue,filtres,Sprint 19,5,"En tant que client, je veux filtrer le catalogue par taille et par couleur afin de ne voir que les produits qui me conviennent.
+
+h3. Critères d'acceptation
+* Les filtres taille et couleur se combinent (ET) et le nombre de résultats se met à jour.
+* Les tailles épuisées sont masquées si possible.
+* Les filtres actifs restent appliqués quand on revient de la fiche produit."
+Livraison en point relais,BOUT-110,10110,Story,Backlog,Medium,Hugo Bernard,2026-09-21 13:15,livraison,,,3,"En tant que client, je veux choisir un point relais à la livraison afin de récupérer mon colis quand je veux."
